@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.0/math.min.js"></script>
+  <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Calculator</title>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-300">
+
+  <div id="calculator" class="bg-white shadow-lg rounded-2xl p-6 w-80 ">
+    <input type="text" id="display" disabled 
+    class="w-full mb-4 text-right text-2xl font-semibold p-3 bg-gray-100 rounded-lg"
+    />
+
+    <div id="buttons" class="grid grid-cols-4 gap-4">
+      <button class="num btn">7</button>
+      <button class="num btn">8</button>
+      <button class="num btn">9</button>
+      <button class="op btn bg-orange-400 text-white">/</button>
+
+      <button class="num btn">4</button>
+      <button class="num btn">5</button>
+      <button class="num btn">6</button>
+      <button class="op btn bg-orange-400 text-white">*</button>
+
+      <button class="num btn">1</button>
+      <button class="num btn">2</button>
+      <button class="num btn">3</button>
+      <button class="op btn bg-orange-400 text-white">-</button>
+
+      <button class="num btn">0</button>
+      <button class="op btn">.</button>
+      <button id="equals" class="btn bg-green-500 text-white col-span-1">=</button>
+      <button class="op btn bg-orange-400 text-white">+</button>
+
+      <button id="clear" class="btn bg-red-500 text-white col-span-4">C</button>
+    </div>
+  </div>
+</body>
+</html>
